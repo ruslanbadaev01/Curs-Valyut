@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="dns-prefetch" href="https://www.cbr-xml-daily.ru/" />
+</head>
+
+<body>
+
+
+    <div class="wrap">
+        <div>
+            <div id="USD">Доллар США $ — 00,0000 руб.</div>
+            <div id="EUR">Евро € — 00,0000 руб.</div>
+        </div>
+        <div>
+            <div id="lastUSD">последний Доллар СШA $ — 00,0000 руб.</div>
+            <div id="lastEUR">последний Евро € — 00,0000 руб.</div>
+        </div>
+        <div>
+            <p id="res" >Разница</p>
+        </div>
+    </div>
+    <script src="//www.cbr-xml-daily.ru/daily_jsonp.js" async></script>
+    
+    <script src="/main.js"></script>
+    <script src="/main2.js"></script>
+    <script src="//www.cbr-xml-daily.ru/archive/2022/02/11/daily_jsonp.js" ></script>
+
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="usd"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
+<script>
+$.getJSON("https://www.cbr-xml-daily.ru/daily_json.js", function(data) {
+    $('#usd').html((data.Valute.USD.Value<data.Valute.USD.Previous?'<i class="fas fa-long-arrow-alt-down"></i>':'<i class="fas fa-long-arrow-alt-up"></i>')+'<i class="fas fa-dollar-sign"></i>'+data.Valute.USD.Value.toFixed(2)+' <i class="fas fa-ruble-sign"></i>');
+});
+</script>
+</body>
+</html> -->
